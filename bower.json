@@ -1,0 +1,22 @@
+{
+  "name": "simpla-test",
+  "homepage": "https://github.com/Jinksi/simpla-test",
+  "authors": [
+    "Eric Jinks <ericjinks@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "simpla-img": "^1.3.2",
+    "simpla-text": "^1.2.2",
+    "simpla-admin": "^1.3.1"
+  }
+}
