@@ -1,0 +1,3 @@
+[build]
+  Command = "cp _content public/."
+  Publish = "public"
