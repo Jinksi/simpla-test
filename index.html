@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Include Simpla, Netlify auth adapter, and cross-browser polyfill-->
+    <script src="https://unpkg.com/simpla@^3.0.0"></script>
+    <script src="https://unpkg.com/simpla@^3.0.0/adapters/netlify.js"></script>
+    <script src="https://unpkg.com/webcomponents.js@^0.7.24/webcomponents-lite.min.js" async></script>
+
+    <!-- Init Simpla -->
+    <script>
+    Simpla.init({
+  // The Github repo you want Simpla to use
+  repo: 'jinksi/simpla-test',
+
+  // Netlify auth adapter, initialize with your Netlify site name
+  auth: new SimplaNetlify({ site: 'mysite' })
+
+  // Public content source (optional)
+  // Defaults to fetching directly from Github
+  // source: 'https://mysite.netlify.com'
+})
+</script>
+  <!-- Import Simpla elements -->
+  <link rel="import" href="/bower_components/simpla-text/simpla-text.html">
+  <link rel="import" href="/bower_components/simpla-img/simpla-img.html">
+  <link rel="import" href="/bower_components/simpla-admin/simpla-admin.html" async>
+  </head>
+  <body>
+    <h1><simpla-text path="/text"></simpla-text></h1>
+        <!-- Block of editable richtext -->
+
+
+    <!-- An editable image -->
+    <img is="simpla-img" path="/section/img">
+  </body>
+</html>
